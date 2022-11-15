@@ -35,4 +35,10 @@ services:
     depends_on:
       - php
       - database
+  node-watch:
+    image: node:14-alpine
+    tty: true
+    volumes:
+      - ./app:/app
+    working_dir: /app
 

@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}index{% endblock %}
+
+{% block body %}
+{#    <div data-controller="counter">#}
+{#        I have been clicked <span data-counter-target="count">0</span> times!#}
+{#        <button#}
+{#                data-action="counter#increment"#}
+{#                class="btn btn-primary btn-sm ">+</button>#}
+{#        <button#}
+{#                data-action="counter#decrement"#}
+{#                class="btn btn-primary btn-sm ">-</button>#}
+{#        <button#}
+{#                data-action="counter#backToZero"#}
+{#                class="btn btn-primary btn-sm ">X</button>#}
+{#    </div>#}
+
+    <div data-controller="color-selector">
+        <button
+                type = "button"
+                data-action="color-selector#chooseColor"
+                style="background-color: red; height: 20px; width: 20px; border: none"
+        ></button>
+        <button
+                type = "button"
+                data-action="color-selector#chooseColor"
+                style="background-color: green; height: 20px; width: 20px; border: none"
+        ></button>
+        <button
+                type = "button"
+                data-action="color-selector#chooseColor"
+                style="background-color: yellow; height: 20px; width: 20px; border: none"
+        ></button>
+        <button
+                type = "button"
+                data-action="color-selector#chooseColor"
+                style="background-color: purple; height: 20px; width: 20px; border: none"
+        ></button>
+        <button
+                type = "button"
+                data-action="color-selector#chooseColor"
+                style="background-color: blue; height: 20px; width: 20px; border: none"
+        ></button>
+        <div data-color-selector-target="colorBox" style="width: 50px; height: 50px; border: 2px black solid">
+
+        </div>
+    </div>
+{% endblock %}
